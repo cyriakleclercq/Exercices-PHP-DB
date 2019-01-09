@@ -8,7 +8,6 @@
 
 // Premiere ligne
 
-<<<<<<< HEAD
 $servername = "localhost";
 $username = "";
 $password = "";
@@ -73,8 +72,6 @@ function suppr ($id)
 
 suppr('');
 
-=======
->>>>>>> parent of 85bdc95... commit 1
 
 
 
