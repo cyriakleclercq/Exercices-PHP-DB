@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="general">
+
+        <div id="ajout">
+            <h2> Ajouter un élève </h2>
+
+            <form action="page3.php" method="get">
+                <label for="nom"> Nom :</label>
+                    <input type="text" name="nom" id="nom">
+
+                <label for="prenom"> Prénom :</label>
+                    <input type="text" name="prenom" id="prenom">
+
+                <label for="age"> âge :</label>
+                    <input type="number" name="age" id="age">
+
+                <button type="submit"> press </button>
+            </form>
+
+        </div>
+
+        <div id="suppr">
+            <h2> Supprimer un élève </h2>
+
+                <form action="page2.php" method="get">
+
+                    <label for="idsuppr"> ID :</label>
+                        <input type="number" name="idsuppr" id="idsuppr">
+
+                    <button type="submit"> press </button>
+                </form>
+        </div>
+
+        <div id="maj">
+            <h2> Mettre à jour un élève</h2>
+
+            <form action="page2.php" method="get">
+
+                <label for="idup"> id :</label>
+                    <input type="number" name="idup" id="idup">
+
+                <label for="nomup"> Nom :</label>
+                    <input type="text" name="nomup" id="nomup">
+
+                <label for="prenomup"> Prénom :</label>
+                    <input type="text" name="prenomup" id="prenomup">
+
+                <label for="ageup"> âge :</label>
+                    <input type="number" name="ageup" id="ageup">
+
+                <button type="submit"> press </button>
+            </form>
+
+            <h2> Ajouter un Mug de couleur </h2>
+            <form action="page4.php" method="get">
+
+            <label for="mugup"> mug :</label>
+                <input type="text" name="mugup" id="mugup">
+                <button type="submit"> press </button>
+
+            </form>
+
+            <h2> Associer un mug à un élève </h2>
+
+            <form action="page5.php" method="get">
+
+
+                <label for="idmugasso">id mug :</label>
+                <input type="text" name="idmugasso" id="idmugasso">
+
+                <label for="ideleveasso"> id eleve </label>
+                <input type="text" name="ideleveasso" id="ideleveasso">
+
+                <button type="submit"> press </button>
+
+            </form>
+
+                <h2> Mettre à jour un Mug</h2>
+
+                <form action="page6.php" method="get">
+
+                    <label for="upmug"> Mug à modifier  :</label>
+                        <input type="text" name="upmug" id="upmug">
+
+                    <label for="idmug"> id mug </label>
+                        <input type="text" name="idmug" id="idmug">
+
+                    <button type="submit"> press </button>
+
+                </form>
+        </div>
+</div>
+</body>
+</html>
