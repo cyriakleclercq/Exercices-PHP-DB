@@ -6,22 +6,7 @@
  * Time: 10:44
  */
 
-$servername = "localhost";
-$username = "";
-$password = "";
-$dbname = "id7331090_bdd1";
-$conn = new mysqli($servername, $username, $password);
-
-if ($conn->connect_error) {
-
-    die("Connection failed: ". $conn->connect_error);
-
-} else {
-
-    // Selectionner la base à utiliser
-
-    $conn->select_db($dbname);
-}
+include "log.php";
 
 // modifier mug
 
