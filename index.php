@@ -9,8 +9,8 @@
 // Premiere ligne
 
 $servername = "localhost";
-$username = "id7331090_cyriak";
-$password = "!Modjo040691";
+$username = "";
+$password = "";
 $dbname = "id7331090_bdd1";
 $conn = new mysqli($servername, $username, $password);
 
