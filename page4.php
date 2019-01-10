@@ -16,7 +16,12 @@ function ajoutMug ($table,$mugup) {
 
     GLOBAL $conn;
 
-    $sql = "INSERT INTO $table VALUES (null,'$mugup')";
-    $conn->query($sql);
+    $stmt = $conn->prepare("INSERT INTO $table VALUES (null,'$mugup')");
+
+    $stmt -> bind_param("s");
+
+    $stmt -> execute();
+
+    $stmt -> close();
 }
 ajoutMug('mugs',$mugup);

@@ -87,8 +87,14 @@ function asso ($table,$ideleve,$idmug) {
 
     GLOBAL $conn;
 
-    $sql = "INSERT INTO $table (id_eleve, id_mug) VALUES ('$ideleve','$idmug')";
-    $conn->query($sql);
+    $stmt = $conn->prepare("INSERT INTO $table (id_eleve, id_mug) VALUES (?,?)");
+
+    $stmt-> bind_param("ii",$ideleve,$idmug);
+
+    $stmt->execute();
+
+    $stmt->close();
+
 }
 
 asso('eleves_mugs',$ideleveasso,$idmugasso);

@@ -41,6 +41,7 @@
  */
 
 include "log.php";
+
 // affichage
 
 function affichage () {

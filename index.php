@@ -14,9 +14,13 @@ function ajout ($age,$prenom,$nom) {
 
     GLOBAL $conn;
 
-    $sql = "INSERT INTO `eleves` VALUES ('','$prenom','$nom','$age')";
+    $stmt = $conn->prepare("INSERT INTO `eleves` VALUES ('','$prenom','$nom','$age')");
 
-    $conn->query($sql);
+    $stmt->bind_param("ssi",$prenom,$nom,$age);
+
+    $stmt-> execute();
+
+    $stmt-> close();
 }
 
 //ajout('30','lubin','meunier');
